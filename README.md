@@ -1,9 +1,31 @@
-# Capstone Template for London Campus  
+# Airbnb challenge: Which country will be the holiday destination for new users?
 
-This repository is a boilerplate template for Flatiron School captstone projects.
-The idea here is that you can take this repository and use it as jumping off point to structure your project so you don't have to re-invent the wheel in terms of the organization of the project.
-If you don't like how this repo is organised, you don't have to stick to it, feel free to change it.
-That said, this format here is a tried and tested format that should work for you! 
+
+Airbnb began in 2008 from the idea of two designers who want to share their spare rooms in their home to travellers and since that moment millions of hosts and travellers choose to create a free Airbnb account so they can list their space and book unique accommodation anywhere in the world. What makes unique Airbnb is the experience itself and the fact that hosts and travellers can share their passions and experiences in almost all the corners of the wordl. The challenge of my project is to build a predictive model that can accurately suggest the first destination of new Airbnb User. There are 12 possible outcomes of the destination country: 'US', 'FR', 'CA', 'GB', 'ES', 'IT', 'PT', 'NL','DE', 'AU', 'NDF' (no destination found), and 'other' and the users considered in this analisys are only USA citizines. 
+
+
+### Executive Summary
+
+For this project I've taken inspiration from the competition launched by Airbnb and closed in 2016, using the data set related. As the competition was close, I decided to used different evaluators from the one suggested by it, the Normalized discounted cumulative gain (NDCG) becouse my goal was to go beyond the challenge itself. In this project a series of classifiers such as Logistic Regression, Decision Trees and KNN are trained and improved in order to give the best prediction and give Airnbn and similar companies useful insights to improve significantly their marketing strategies and therefore their profit.
+
+### Data Cleaning and Feature Engineering
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 The way to use this template is to just copy and paste the file structure (don't fork it, you don't want to be just manipulating a template!) to your new initialized repo and fill in things where they should go.
 We also suggest if you need direction to check out the `Project Checklist` markdown file  that is found in this repository as well as the [Capstone Questions](https://docs.google.com/document/d/11Otz1b2oRT3Xn0TK16X1o44hphGP4aBqdpARv0GWXBA/edit?usp=sharing) document for help building and assessing this project. 
