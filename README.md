@@ -1,15 +1,59 @@
 # Airbnb challenge: Which country will be the holiday destination for new users?
 
 
-Airbnb began in 2008 from the idea of two designers who want to share their spare rooms in their home to travellers and since that moment millions of hosts and travellers choose to create a free Airbnb account so they can list their space and book unique accommodation anywhere in the world. What makes unique Airbnb is the experience itself and the fact that hosts and travellers can share their passions and experiences in almost all the corners of the wordl. The challenge of my project is to build a predictive model that can accurately suggest the first destination of new Airbnb User. There are 12 possible outcomes of the destination country: 'US', 'FR', 'CA', 'GB', 'ES', 'IT', 'PT', 'NL','DE', 'AU', 'NDF' (no destination found), and 'other' and the users considered in this analisys are only USA citizines. 
+Airbnb began in 2008 from the idea of two designers who want to share their spare rooms in their home to travellers and since that moment millions of hosts and travellers choose to create a free Airbnb account so they can list their space and book unique accommodation anywhere in the world. What makes unique Airbnb is the experience itself and the fact that hosts and travellers can share their passions and experiences in almost all the corners of the wordl. The challenge of my project is to build a predictive model that can accurately suggest the first destination of new Airbnb User. All the processes involved, such as exploratory data analysis, feature engenieering, data cleaning and the machine learning models have been divided into main sections in the notebook and the reader is advised to read it sequentially in order to have a complete understanding of the whole project. There are 12 possible outcomes of the destination country: 'US', 'FR', 'CA', 'GB', 'ES', 'IT', 'PT', 'NL','DE', 'AU', 'NDF' (no destination found), and 'other' and the users considered in this analysis are only USA citizines. 
 
+### Contact details
+
+Email: soledadmusella@gmail.com
+LinkedIn: linkedin.com/in/soledad-musella-bb8665104
+
+### Table of Contents: 
+
+- Technologies used
+- Executive Summary
+- Exploratory Data Analysis
+- Data Cleaning and Feature Engineering
+- Modelling 
+- Future Improvements
+
+
+### Technologies used
+
+- Python
+- Pandas
+- Seaborn
+- Matplotlib
+- Numpy
+- Scikit-learn
 
 ### Executive Summary
 
 For this project I've taken inspiration from the competition launched by Airbnb and closed in 2016, using the data set related. As the competition was close, I decided to used different evaluators from the one suggested by it, the Normalized discounted cumulative gain (NDCG) becouse my goal was to go beyond the challenge itself. In this project a series of classifiers such as Logistic Regression, Decision Trees and KNN are trained and improved in order to give the best prediction and give Airnbn and similar companies useful insights to improve significantly their marketing strategies and therefore their profit.
 
+
+### Exploratory Data Analysis
+
+The very first step was to load the data available into Pandas Dataframe and extract basic information such as the distribution of the values, the nature of the values and the possible relationship between them. In particular I focused my research in understanding if there could be a gender based preference for certain countries and if, as a result, the gender could be a decisive feature correlated to the decision of whether to choose a country or another. I also created new columns by performing feature engineering to find out which are the days of the week in which is more likely to have new accounts created. Surprisingly the week-end days turned out to be the less active days in terms of creating new accounts. 
+
+
+![](capstone viz/Screenshot 2020-05-19 at 22.10)        ![](capstone viz/Screenshot 2020-05-19 at 22.11) 
+
+
 ### Data Cleaning and Feature Engineering
 
+I have been working on two datasets in particular, the first called "sessions" and the second called "users". Both of the datasets were row and with a huge number of null values. The data cleaning process was focused on solving the problems given by having null categorical values and trying to find the best way to handle them in order to avoid further bias during the modellig part. In addiction to that I' ve been performing some feture engineering by creating new variables( "day of the week", "first action", "last_action_detail" ecc) and merging the data sets with new columns in one unique and meaningful final data set: "final_users".
+
+
+### Modelling 
+
+Predicting holiday destinations for new Airbnb users presents a very specific and unique problem: it is a multiclass classification. Having said that, I decided to use Logistic Regression as a baseline model since I felt it could be a good starting point from which to start all the next further improvements. My next steps regarding modelling are to use more complex models as Decision Trees and KNN in order increase the godness of the prediction.   
+
+
+
+### Future Improvements
+
+The data sets that I've used to perform my analysis have an incredible potencial in terms of information and consequently insights. To be continued..
 
 
 
@@ -24,64 +68,5 @@ For this project I've taken inspiration from the competition launched by Airbnb 
 
 
 
-
-
-
-The way to use this template is to just copy and paste the file structure (don't fork it, you don't want to be just manipulating a template!) to your new initialized repo and fill in things where they should go.
-We also suggest if you need direction to check out the `Project Checklist` markdown file  that is found in this repository as well as the [Capstone Questions](https://docs.google.com/document/d/11Otz1b2oRT3Xn0TK16X1o44hphGP4aBqdpARv0GWXBA/edit?usp=sharing) document for help building and assessing this project. 
-Both this boiler plate and the checklist were built simultaneously, so feel free to use them in tandem. 
-
-> Eventually you will delete everything above this line. This is just here to introduce the boilerplate. We also suggest deleting any other indentations like this. There are more there to get you thinking about the 'point' of the section. 
-# The Title of Your Project Goes Here 
-
-One sentence summary goes here saying what you did.
-A second sentence goes here says why it matters.
-A last sentence links to any productionized web dashboard here.
-
-You can also link to 
-* [Your Email]()
-* [Your Linked In]()
-* [Your Twitter?]()
-
-> We suggest that people follow a "Facebook Page" approach to writing up their README. This means that the most important information is at the top (your name, point of project, contact info) and then as you go down the document you get less and less relevant information. Remember that you are NOT writing a detective story and need to find a way to present as much information as quickly as possible to the person that will be looking at this for 45 seconds tops. Of course others might look for longer, but the UX/UI of your REAMDE should be done with the 'github skimmer' in mind.
-
-### Executive Summary
-
-Start with one or two sentences here that contextualises what your project matters here.
-These two sentences will demonstrate your business understanding. 
-
-Next, in a second paragraph, write how you were able to make a data science operationalization of the problem.
-For example, you might say that in order to help solve this problem you set out to build a classification ML model in order to automate some process. 
-
-Third, you then write what you did on the project that is a bit more technical.
-Here you might say that you took data from [here and make it a link to the original data]() and then ran `a list of models you ran here` in your analysis.
-Then end with one sentence that picks what your best model was and how it performed.
-
-Lastly, you say in one or two sentences why this matters. 
-For example, now as opposed to before this data analysis, you can now predict X better than Y. 
-
-The goal of this project was to create a `regression/classification` model that was able to predict `what you set out to do`.
-
-> If you are able to swap out the text here with what your case example is you will demonstrate the following:
-> 1. You get why what you're doing 'matters'
-> 2. You are able to take ill defined problems and turn them into something a data scienst can solve
-> 3. You show off your analystical and modeling chops.
-> 4. You are able to communicate technical things you do.
-
-### More Information
-
-Below your Executive Summary, you can document whatever you feel would be of interest to a future employer.
-Here I would especially suggest diving a bit deeper into your methodology and including images that you are proud of from the project. 
-Remember, that people will probably judge your github project page within 45 seconds tops, you want it to look as clean as possible. 
-
-Write documentation that looks like someone you would want to work with.
-
-### Show Off Your Data Viz
-
-![Everyone Likes a Pairplot](figures/seaborn-pairplot-3.png)
-
-> Image taken from `seaborn` [documentation](https://seaborn.pydata.org/generated/seaborn.pairplot.html)
-
-**DO NOT PUT THE GOOD BITS OF YOUR PROJECT BURRIED AWAY AT THE BOTTOM OF YOUR README, YOU ARE NOT WRITING A DETECTIVE NOVEL**
 
 
