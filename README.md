@@ -6,6 +6,7 @@ Airbnb began in 2008 from the idea of two designers who want to share their spar
 ### Contact details
 
 Email: soledadmusella@gmail.com
+
 LinkedIn: linkedin.com/in/soledad-musella-bb8665104
 
 ### Table of Contents: 
@@ -37,7 +38,7 @@ For this project I've taken inspiration from the competition launched by Airbnb 
 The very first step was to load the data available into Pandas Dataframe and extract basic information such as the distribution of the values, the nature of the values and the possible relationship between them. In particular I focused my research in understanding if there could be a gender based preference for certain countries and if, as a result, the gender could be a decisive feature correlated to the decision of whether to choose a country or another. I also created new columns by performing feature engineering to find out which are the days of the week in which is more likely to have new accounts created. Surprisingly the week-end days turned out to be the less active days in terms of creating new accounts. 
 
 
-![](capstone viz/Screenshot 2020-05-19 at 22.10)        ![](capstone viz/Screenshot 2020-05-19 at 22.11) 
+
 
 
 ### Data Cleaning and Feature Engineering
