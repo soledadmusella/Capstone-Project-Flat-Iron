@@ -1,6 +1,6 @@
 # Airbnb challenge: Which country will be the holiday destination for new users?
 
-![Screenshot 2020-05-26 at 18.57.png](/Users/soledadmusella/Desktop/Capstone-Project-Flat-Iron/figures)
+![](figures/Presentation.png)
 
 Airbnb began in 2008 from the idea of two designers who want to share their spare rooms in their home to travelers and since that moment millions of hosts and travelers choose to create a free Airbnb account so they can list their space and book unique accommodation anywhere in the world. What makes unique Airbnb is the experience itself and the fact that hosts and travelers can share their passions and experiences in almost all the corners of the world. The challenge of my project is to build a predictive model that can accurately suggest the first destination of a new Airbnb User. All the processes involved, such as exploratory data analysis, feature engineering, data cleaning and the machine learning models have been divided into main sections in the notebook and the reader is advised to read it sequentially to have a complete understanding of the whole project. There are 12 possible outcomes of the destination country: 'US', 'FR', 'CA', 'GB', 'ES', 'IT', 'PT', 'NL','DE', 'AU', 'NDF' (no destination found), and 'other' and the users considered in this analysis are only USA citizens. 
 
@@ -38,7 +38,7 @@ For this project I've taken inspiration from the competition launched by Airbnb 
 
 The very first step was to load the data available into Pandas Dataframe and extract basic information such as the distribution of the values, the nature of the values and the possible relationship between them. In particular I focused my research on understanding if there could be a gender-based preference for certain countries and if, as a result, gender could be a decisive feature correlated to the decision of whether to choose a country or another. I also created new columns by performing feature engineering to find out which are the days of the week in which is more likely to have new accounts created. Surprisingly the week-end days turned out to be the less active days in terms of creating new accounts. 
 
-                     
+ ![](figures/Gender.png)                                                         ![](figures/Days.png)                                                                  
 
 ### Data Cleaning and Feature Engineering
 
