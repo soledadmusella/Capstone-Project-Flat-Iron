@@ -6,9 +6,9 @@ Airbnb began in 2008 from the idea of two designers who want to share their spar
 
 ### Contact details
 
-Email: soledadmusella@gmail.com
+[Email](soledadmusella@gmail.com)
 
-LinkedIn: linkedin.com/in/soledad-musella-bb8665104
+[LinkedIn](linkedin.com/in/soledad-musella-bb8665104)
 
 ### Table of Contents: 
 
@@ -55,8 +55,10 @@ I decided to use 3 different models and I tuned them with hyperparameter: Logist
 The data sets that I've used to perform my analysis have incredible potential in terms of information and consequently insights. Scaling the numerical predictors could improve significantly the model performance. In addition I would like to perform a Random Forrest classifier and compare its performance with the other models.
 
 
+### Sources 
 
-
+*[https://www.kaggle.com/c/airbnb-recruiting-new-user-bookings/data()
+*[https://medium.com/@b.terryjack/tips-and-tricks-for-multi-class-classification-c184ae1c8ffc()
 
 
 
