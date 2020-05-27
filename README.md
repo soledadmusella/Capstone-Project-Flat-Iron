@@ -45,15 +45,15 @@ The very first step was to load the data available into Pandas Dataframe and ext
 I have been working on two datasets in particular, the first called "sessions" and the second called "users". Both of the datasets were row and with a huge number of null values. The data cleaning process was focused on solving the problems given by having null categorical values and trying to find the best way to handle them to avoid further bias during the modelig part. In addiction, to that I' ve been performing some future engineering by creating new variables( "day of the week", "first action", "last_action_detail" etc) and merging the data sets with new columns in one unique and meaningful final data set: "final_users".
 
 
-### Modeling review
+### Modeling 
 
 Predicting holiday destinations for new Airbnb users presents a very specific and unique problem: it is a multiclass classification. Due to the complexity of  the task and the short deadline, I decided to convert my multiclass classification into binary classification by dividing the target variable "countries_destination" in two classes: "US" and "no US". I picked "US" because performing the EDA I realized that the majority of the users were going on US on holiday. 
-I decided to use 3 different models and I tuned them with hyperparameter: Logistic Regression, KNN and Decision Tree. By realizing that I was having a class imbalance issue I use the SMOTE technique to resample my data and more accurate predictions. My winning model was the KNN because was the model that gave the best performance. However the result on the test data gave a much lower result and this means that the model was quite overfitted.   
-
+I decided to use 3 different models and I tuned them with hyperparameter: Logistic Regression, KNN and Decision Tree. By realising that I was having a class imbalance issue I use the SMOTE technique to resample my data and more accurate predictions. My winning model was the Logistic Regression tuned with hyperparameter because was the model that gave the best performance. However by performing my final prediction on the test set with this model I got a much lower result on the ROC_AUC metric.  This showed for sure some overfitting but also the lower result was a consequence of the fact that I didn't resample the test set with the purpose of having a more realistic result.
 
 ### Future Improvements
 
-The data sets that I've used to perform my analysis have an incredible potential in terms of information and consequently insights. Scaling the data could be a good improvement to reduce the overfitting of the final model. In addiction I would like to perform Random Forrest classifier to see how its performance.
+The data sets that I've used to perform my analysis have incredible potential in terms of information and consequently insights. Scaling the numerical predictors could improve significantly the model performance. In addition I would like to perform a Random Forrest classifier and compare its performance with the other models.
+
 
 
 
