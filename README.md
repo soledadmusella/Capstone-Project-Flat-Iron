@@ -57,8 +57,8 @@ The data sets that I've used to perform my analysis have incredible potential in
 
 ### Sources 
 
-*[https://www.kaggle.com/c/airbnb-recruiting-new-user-bookings/data()
-*[https://medium.com/@b.terryjack/tips-and-tricks-for-multi-class-classification-c184ae1c8ffc()
+https://www.kaggle.com/c/airbnb-recruiting-new-user-bookings/data
+https://medium.com/@b.terryjack/tips-and-tricks-for-multi-class-classification-c184ae1c8ffc
 
 
 
