@@ -47,13 +47,13 @@ I have been working on two datasets in particular, the first called "sessions" a
 
 ### Modeling review
 
-Predicting holiday destinations for new Airbnb users presents a very specific and unique problem: it is a multiclass classification. Having said that, I decided to use Logistic Regression as a baseline model since I felt it could be a good starting point from which to start all the next further improvements. My next steps regarding modeling are to use more complex models as Decision Trees and KNN in order increase the godness of the prediction.   
-
+Predicting holiday destinations for new Airbnb users presents a very specific and unique problem: it is a multiclass classification. Due to the complexity of  the task and the short deadline, I decided to convert my multiclass classification into binary classification by dividing the target variable "countries_destination" in two classes: "US" and "no US". I picked "US" because performing the EDA I realized that the majority of the users were going on US on holiday. 
+I decided to use 3 different models and I tuned them with hyperparameter: Logistic Regression, KNN and Decision Tree. By realizing that I was having a class imbalance issue I use the SMOTE technique to resample my data and more accurate predictions. My winning model was the KNN because was the model that gave the best performance. However the result on the test data gave a much lower result and this means that the model was quite overfitted.   
 
 
 ### Future Improvements
 
-The data sets that I've used to perform my analysis have an incredible potencial in terms of information and consequently insights. To be continued..
+The data sets that I've used to perform my analysis have an incredible potential in terms of information and consequently insights. Scaling the data could be a good improvement to reduce the overfitting of the final model. In addiction I would like to perform Random Forrest classifier to see how its performance.
 
 
 
